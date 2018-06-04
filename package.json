@@ -14,7 +14,7 @@
     "prepare": "lerna run prepare"
   },
   "workspaces": [
-    "1-basic",
+    "1-naive",
     "2-babel",
     "3-esm-rollup",
     "4-esm-webpack",
