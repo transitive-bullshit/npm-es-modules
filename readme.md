@@ -2,13 +2,13 @@
 
 > Breakdown of 7 different ways to use ES modules with npm today.
 
-[![NPM](https://img.shields.io/npm/v/npm-es-modules.svg)](https://www.npmjs.com/package/npm-es-modules) [![Build Status](https://travis-ci.com/transitive-bullshit/npm-es-modules.svg?branch=master)](https://travis-ci.com/transitive-bullshit/npm-es-modules) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://travis-ci.com/transitive-bullshit/npm-es-modules.svg?branch=master)](https://travis-ci.com/transitive-bullshit/npm-es-modules) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ES Modules are the future of JavaScript, but unlike many other es@next features that developers have raced to take advantage of mainly thanks to build tools like [babel](https://babeljs.io/), working with ES modules alongside of existing NPM modules is a lot harder to get started with.
 
 The purpose of this tutorial is to provide a thorough set of examples for different ways you can approach writing ES modules, without losing interop with the vast library of mostly commonjs modules that exist on NPM today.
 
-We'll start with a naive ES module at [step 1](1-naive) and work our way through a series of increasingly complex example approaches, all of which are intended to define the same, basic module.
+We'll start with a naive ES module in [step 1](1-naive) and work our way through a series of increasingly complex example approaches, all of which are intended to define the same, basic module.
 
 
 ## Goals
@@ -27,7 +27,7 @@ Every approach must satisfy the following requirements:
 
 The functionality of our example NPM module is a bit contrived, but it should touch on all the potential pain points, and trust me, there are *a lot* of them...
 
-Every approach will export an NPM module that takes in an image and returns its `{ width, height }`.
+Every approach will define an NPM module with a single default export, `async getImageDimensions(input)`, that takes in an image and returns its `{ width, height }`.
 
 To show how you can bundle modules with slightly different semantics for Node.js and the browser:
 - the node version supports `input` as a `string` that can either be a local path, http url, or data url.
