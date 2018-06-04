@@ -9,12 +9,12 @@
 This approach uses [babel](https://babeljs.io/)+[webpack](https://webpack.js.org/) to compile all Node.js and browser source files.
 
 Some notes:
-- All source files use the `.mjs` extension which is (likely) more future-proof than using es modules with the standard `.js` extension.
-- It supports all three `main`, `module`, and `browser` fields.
+- Source files end in `.mjs`
+- Supports all three targets `main`, `module`, and `browser`
 - Unfortunately, **Webpack does not support outputting ES module targets** ([issue](https://github.com/webpack/webpack/issues/2933)).
 - The `main` and `browser` targets are compiled, but the `module` target is unable to be compiled.
-- This means that the only supports `node >= 8`, whereas the [rollup](../5-rollup) version is capable of supporting `node >= 4` by compiling the `module` target as well.
-- Unless you have a good project-specific reason to use webpack over rollup, I would strongly recommend using rollup to bundle ES6 module libraries (until this webpack issue is resolved).
+- Supports `node >= 8`, whereas the [rollup](../5-rollup) version is capable of supporting `node >= 4` by compiling the `module` target as well.
+- Unless you have a good project-specific reason to use webpack over rollup, I would strongly recommend using rollup to bundle ES6 module libraries (at least until this webpack issue is addressed).
 
 ## Approaches
 

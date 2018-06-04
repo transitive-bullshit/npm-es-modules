@@ -4,15 +4,15 @@
 
 [![NPM](https://img.shields.io/npm/v/npm-es-modules-7-typescript.svg)](https://www.npmjs.com/package/npm-es-modules-7-typescript) [![Build Status](https://travis-ci.com/transitive-bullshit/npm-es-modules.svg?branch=master)](https://travis-ci.com/transitive-bullshit/npm-es-modules) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-**WARNING**: this approach is a WIP.
-
 This approach uses [typescript](https://www.typescriptlang.org/) to transpile all Node.js and browser source files.
 
 Some notes:
-- All source files use the `.ts` extension which as opposed to the standard `.js` extension.
-- It properly supports all three `main`, `module`, and `browser` targets.
-- All three targets are compiled via `tsc`, the typescript compiler.
-- This is the second of our modules to support `node >= 4` (or whatever we specify in our `tsconfig.json`) instead of `node >= 8`.
+- Source files end in `.ts`
+- Supports all three targets `main` `module`, and `browser`
+- Two compilation passes are necessary, one for targeting `commonjs` and one targeting `esm`
+- Currently, commonjs users have to add default to require statements: `require('npm-es-modules-7-typescript').default`
+  - If you know how to prevent this, please let me know!
+- Resulting module supports `node >= 4` (or whatever we specify in our `tsconfig.json`) instead of `node >= 8`
 - **Overall, this feels like the cleanest and most future-proof approach**.
 
 ## Approaches

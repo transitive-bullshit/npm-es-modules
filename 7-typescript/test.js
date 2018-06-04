@@ -3,7 +3,7 @@
 const { test } = require('ava')
 const path = require('path')
 
-const getImageDimensions = require('./dist')
+const getImageDimensions = require('./dist/cjs').default
 
 const fixturesPath = path.join(__dirname, '..', 'media')
 

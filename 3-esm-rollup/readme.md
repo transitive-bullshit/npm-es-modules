@@ -7,10 +7,10 @@
 This approach uses [esm](https://github.com/standard-things/esm) for Node.js and [babel](https://babeljs.io/)+[rollup](https://rollupjs.org/guide/en) to compile browser source files.
 
 Some notes:
-- All source files use the `.mjs` extension which is (likely) more future-proof than using es modules with the standard `.js` extension.
-  - The one exception is the commonjs entrypoint, `main.js`.
-- It properly supports all three `main`, `module`, and `browser` fields.
-- The only target that is compiled is `browser`, making debugging the Node.js version easier.
+- Source files end in `.mjs`
+  - One exception is the commonjs entrypoint, `main.js`.
+- Supports all three targets `main` `module`, and `browser`
+- The only target that is compiled is `browser`, making debugging the Node.js version easier
 
 ## Approaches
 

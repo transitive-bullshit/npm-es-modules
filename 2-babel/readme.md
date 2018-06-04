@@ -7,9 +7,9 @@
 This approach uses [babel](https://babeljs.io/) with [babel-preset-env](https://babeljs.io/docs/plugins/preset-env/) to transpile all Node.js and browser source files into `dist/`. It is relatively simple, with `package.json` properly supporting all three `main`, `module`, and `browser` fields.
 
 Some notes:
-- All source files use the `.mjs` extension which is (likely) more future-proof than using es modules with the standard `.js` extension.
-- Babel takes care of transforming all source files to commonjs.
-- Tests are run on the transpiled source, which could make debugging slightly harder.
+- Source files end in `.mjs`
+- Babel transpiles all source files to commonjs
+- Tests are run on the transpiled source, which could make debugging slightly harder
 - Currently, our `main` and `browser` are commonjs exports that support `node >= 4` (or whatever we specify in our babel-preset-env config), whereas the `module` export is an es module that supports `node >=8` due to its usage of `async await`.
 - Unfortunately AFAIK, package.json `engines` doesn't support specifying that `main` supports a certain node version whereas `module` supports a different module version, and I'd go so far as to say this is a bad practice.
 - To get around this, we could specify the minimum node version to be `node >= 8` like we did here or add a second babel step which transpiles the node version to an esm folder, although I find this somewhat clunky.

@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "dist/cjs",
+    "outDir": "dist/esm",
     "target": "es2015",
     "lib": [
       "es2015",

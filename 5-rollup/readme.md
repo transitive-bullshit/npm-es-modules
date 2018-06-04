@@ -7,11 +7,11 @@
 This approach uses [babel](https://babeljs.io/)+[rollup](https://rollupjs.org/guide/en) to compile Node.js and browser source files.
 
 Some notes:
-- All source files use the `.mjs` extension which is (likely) more future-proof than using es modules with the standard `.js` extension.
-- It properly supports all three `main`, `module`, and `browser` targets.
-- All three targets are compiled via rollup, with Node.js and the browser having two separate configs.
-- This is the first of our modules to support `node >= 4` (or whatever we specify in our babel-preset-env config) instead of `node >= 8`.
-- Although we include source maps along with the compiled targets, debugging will be slightly harder than if we weren't using transpilation.
+- Source files end in `.mjs`
+- Supports all three targets `main` `module`, and `browser`
+- All three targets are compiled via rollup, with Node.js and the browser having two separate configs
+- This is our first module to support `node >= 4` (or whatever we specify in our babel-preset-env config) instead of `node >= 8`
+- Source maps are generated along with the compiled targets
 
 ## Approaches
 
