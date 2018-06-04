@@ -48,6 +48,7 @@ Both versions return a `Promise` for an `Object` containing `width` and `height`
 - [rollup](https://rollupjs.org/guide/en) - A module bundler for JavaScript.
 - [webpack](https://webpack.js.org/) - A bundler for javascript and friends.
 - [typescript](https://www.typescriptlang.org/) - TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+- [systemjs](https://github.com/systemjs/systemjs) - Configurable module loader enabling dynamic ES module workflows in browsers and NodeJS.
 
 
 ## Related Tutorials

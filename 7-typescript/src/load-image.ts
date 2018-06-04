@@ -1,4 +1,4 @@
-import getPixels from 'get-pixels'
+import * as getPixels from 'get-pixels'
 
 interface Shape {
   width: number;
