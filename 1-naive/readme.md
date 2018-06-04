@@ -8,8 +8,8 @@ In this approach, we use normal `.js` file extensions for es modules and no tran
 
 It is relatively simple and straightforward but breaks several of our module [goals](https://github.com/transitive-bullshit/npm-es-modules#goals):
 
-- It is not usable from normal node.js because its `main` field points to an es module file whereas it should point to a commonjs file.
-- It is not usable from the browser via webpack or rollup because its `browser` field points to an es module file whereas it should point to a commonjs file.
+- It is not usable from normal node.js because its `main` field points to an es module whereas it should point to a commonjs file.
+- It is not usable from the browser via webpack or rollup because its `browser` field points to an es module whereas it should point to a commonjs file.
 - The only advantage of this approach is its simplicity, and this may be good enough if you are just working on private modules.
 - **Warning**: unless you are using strictly local or private modules, we strongly encourage you **not** to use this approach in practice. It is meant as an example of what not to do when transitioning from commonjs to ES modules, and if you publish a module publicly using this approach, the JavaScript Gods will find and shame you.
 - Unfortunately AFAIK, there is really nothing built into the npm ecosystem which prevents you from publishing broken modules like this, although as ES modules gain popularity over the coming years, I believe this will be addressed.
