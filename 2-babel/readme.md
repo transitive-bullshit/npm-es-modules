@@ -2,7 +2,7 @@
 
 > Breakdown of 7 different ways to use ES modules with npm today.
 
-[![NPM](https://img.shields.io/npm/v/npm-es-modules-1-naive.svg)](https://www.npmjs.com/package/npm-es-modules-1-naive) [![Build Status](https://travis-ci.com/transitive-bullshit/npm-es-modules.svg?branch=master)](https://travis-ci.com/transitive-bullshit/npm-es-modules) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/npm-es-modules-2-babel.svg)](https://www.npmjs.com/package/npm-es-modules-2-babel) [![Build Status](https://travis-ci.com/transitive-bullshit/npm-es-modules.svg?branch=master)](https://travis-ci.com/transitive-bullshit/npm-es-modules) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 This approach uses [babel](https://babeljs.io/) with [babel-preset-env](https://babeljs.io/docs/plugins/preset-env/) to transpile all Node.js and browser source files into `dist/`. It is relatively simple, with `package.json` properly supporting all three `main`, `module`, and `browser` fields.
 
