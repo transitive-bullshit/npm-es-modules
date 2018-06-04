@@ -25,7 +25,7 @@ Every approach must satisfy the following requirements:
 
 ## Functionality
 
-The functionality of our example NPM module is a bit contrived, but it should address all of the potential pain points.
+The functionality of our example NPM module is a bit contrived, but it should touch on all the potential pain points, and trust me, there are *a lot* of them...
 
 Every approach will export an NPM module that takes in an image and returns its `{ width, height }`.
 
