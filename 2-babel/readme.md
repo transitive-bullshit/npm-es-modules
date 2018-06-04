@@ -6,7 +6,6 @@
 
 This approach uses [babel](https://babeljs.io/) with [babel-preset-env](https://babeljs.io/docs/plugins/preset-env/) to transpile all Node.js and browser source files into `dist/`. It is relatively simple, with `package.json` properly supporting all three `main`, `module`, and `browser` fields.
 
-Some notes:
 - Source files end in `.mjs`
 - Babel transpiles all source files to commonjs
 - Tests are run on the transpiled source, which could make debugging slightly harder

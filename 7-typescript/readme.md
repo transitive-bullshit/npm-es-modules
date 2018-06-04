@@ -6,7 +6,6 @@
 
 This approach uses [typescript](https://www.typescriptlang.org/) to transpile all Node.js and browser source files.
 
-Some notes:
 - Source files end in `.ts`
 - Supports all three targets `main` `module`, and `browser`
 - Two compilation passes are necessary, one for targeting `commonjs` and one targeting `esm`

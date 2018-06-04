@@ -8,7 +8,6 @@
 
 This approach uses [babel](https://babeljs.io/)+[webpack](https://webpack.js.org/) to compile all Node.js and browser source files.
 
-Some notes:
 - Source files end in `.mjs`
 - Supports all three targets `main`, `module`, and `browser`
 - Unfortunately, **Webpack does not support outputting ES module targets** ([issue](https://github.com/webpack/webpack/issues/2933)).

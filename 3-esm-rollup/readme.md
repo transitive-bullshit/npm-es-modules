@@ -6,7 +6,6 @@
 
 This approach uses [esm](https://github.com/standard-things/esm) for Node.js and [babel](https://babeljs.io/)+[rollup](https://rollupjs.org/guide/en) to compile browser source files.
 
-Some notes:
 - Source files end in `.mjs`
   - One exception is the commonjs entrypoint, `main.js`.
 - Supports all three targets `main` `module`, and `browser`

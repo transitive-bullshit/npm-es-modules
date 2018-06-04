@@ -6,7 +6,6 @@
 
 This approach uses [babel](https://babeljs.io/)+[rollup](https://rollupjs.org/guide/en) to compile Node.js and browser source files.
 
-Some notes:
 - Source files end in `.mjs`
 - Supports all three targets `main` `module`, and `browser`
 - All three targets are compiled via rollup, with Node.js and the browser having two separate configs

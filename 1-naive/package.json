@@ -4,7 +4,7 @@
   "description": "Breakdown of 7 different ways to use ES modules with NPM today.",
   "main": "index.js",
   "module": "index.js",
-  "browser": "index.js",
+  "browser": "browser.js",
   "repository": "transitive-bullshit/npm-es-modules",
   "author": "Travis Fischer <travis@automagical.ai>",
   "license": "MIT",
