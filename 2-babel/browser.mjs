@@ -10,7 +10,6 @@ import loadImage from './lib/browser-load-image'
  * @param {string|Image} input - URL or Image instance to process
  * @return {Promise}
  */
-
 export default async (input) => {
   ow(input, ow.any(
     ow.string.nonEmpty.label('input'),

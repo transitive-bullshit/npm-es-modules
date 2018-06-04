@@ -45,6 +45,10 @@ Both versions return a `Promise` for an `Object` containing `width` and `height`
 - [webpack](https://webpack.js.org/) - A bundler for javascript and friends.
 - [typescript](https://www.typescriptlang.org/) - TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
 
+## Related Tutorials
+
+- [](http://2ality.com/2017/07/npm-packages-via-babel.html)
+
 ## License
 
 MIT © [Travis Fischer](https://github.com/transitive-bullshit)

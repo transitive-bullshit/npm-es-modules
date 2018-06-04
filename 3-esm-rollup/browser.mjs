@@ -1,3 +1,5 @@
+// browser es module entrypoint transpiled to ES5 and commonjs at dist/browser.js
+
 import ow from 'ow'
 import loadImage from './lib/browser-load-image'
 
