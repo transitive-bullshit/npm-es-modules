@@ -1,6 +1,6 @@
 {
   "name": "npm-es-modules-7-typescript",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Breakdown of 7 different ways to use ES modules with NPM today.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
