@@ -4,6 +4,12 @@
 
 [![NPM](https://img.shields.io/npm/v/npm-es-modules.svg)](https://www.npmjs.com/package/npm-es-modules) [![Build Status](https://travis-ci.com/transitive-bullshit/npm-es-modules.svg?branch=master)](https://travis-ci.com/transitive-bullshit/npm-es-modules) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+ES Modules are the future of JavaScript, but unlike many other es@next features that developers have raced to take advantage of mainly thanks to build tools like [babel](https://babeljs.io/), working with ES modules alongside of existing NPM modules is a lot harder to get started with.
+
+The purpose of this tutorial is to provide a thorough set of examples for different ways you can approach writing ES modules, without losing interop with the vast library of mostly commonjs modules that exist on NPM today.
+
+We'll start with a naive ES module at [step 1](1-naive) and work our way through a series of increasingly complex example approaches, all of which are intended to define the same, basic module.
+
 
 ## Goals
 
@@ -19,19 +25,20 @@ Every approach must satisfy the following requirements:
 
 ## Functionality
 
-The functionality of our example NPM module is contrived, but it should be enough to illustrate all common usage scenarios.
+The functionality of our example NPM module is a bit contrived, but it should address all of the potential pain points.
 
-Namely, every approach will export an NPM module that takes in an image and returns its `{ width, height }`.
+Every approach will export an NPM module that takes in an image and returns its `{ width, height }`.
 
 To show how you can bundle modules with slightly different semantics for Node.js and the browser:
 - the node version supports `input` as a `string` that can either be a local path, http url, or data url.
 - the browser version supports `input` as a `string` URL or an `HTMLImageElement`.
 
-Both versions return a `Promise` for an `Object` containing `width` and `height` properties.
+Both versions return a `Promise` for `{ width: number, height: number }`.
 
 
 ## Approaches
 
+<!-- 0. [commonjs](0-commonjs) - Old-school commonjs module using `module.exports` and `require` as a starting point. -->
 1. [naive](1-naive) - The most naive possible use of ES modules supporting our functionality. This approach is *broken* and provided as an example starting point.
 2. [babel](2-babel) - Uses [babel](https://babeljs.io/) to transpile all Node.js and browser source files.
 3. [esm-rollup](3-esm-rollup) - Uses [esm](https://github.com/standard-things/esm) for Node.js and [babel](https://babeljs.io/)+[rollup](https://rollupjs.org/guide/en) to compile browser source files.
