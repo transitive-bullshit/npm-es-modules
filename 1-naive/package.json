@@ -1,5 +1,5 @@
 {
-  "name": "npm-es-modules-1-basic",
+  "name": "npm-es-modules-1-naive",
   "version": "0.0.0",
   "description": "Breakdown of different ways to use ES modules with NPM today.",
   "main": "index.js",

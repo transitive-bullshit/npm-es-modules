@@ -27,7 +27,7 @@ Both versions return a `Promise` for an `Object` containing `width` and `height`
 
 ## Approaches
 
-- [1-basic](1-basic) -
+1. [naive](1-naive) -
 
 ## Related
 
