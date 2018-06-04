@@ -2,7 +2,7 @@ import ow from 'ow'
 import loadImage from './lib/load-image'
 
 /**
- * Computes the dimensions of a input image.
+ * Computes the dimensions of an input image.
  *
  * @name getImageDimensions
  * @function

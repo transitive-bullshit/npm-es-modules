@@ -15,6 +15,8 @@ Every approach must satisfy the following requirements:
 - import at least one es module source file locally
 - include at least one unit test
 
+## Functionality
+
 The functionality of our example NPM module is contrived, but it should be enough to illustrate all common usage scenarios.
 
 Namely, every approach will export an NPM module that takes in an image and returns its `{ width, height }`.
@@ -27,11 +29,21 @@ Both versions return a `Promise` for an `Object` containing `width` and `height`
 
 ## Approaches
 
-1. [naive](1-naive) -
+1. [naive](1-naive) - The most naive possible use of ES modules supporting our functionality. This approach is *broken* and provided as an example starting point.
+2. [babel](2-babel) - Uses [babel](https://babeljs.io/) to transpile Node.js and browser source files.
+3. [esm-rollup](3-esm-rollup) - Uses [esm](https://github.com/standard-things/esm) for Node.js and [babel](https://babeljs.io/)+[rollup](https://rollupjs.org/guide/en) to compile browser source files.
+4. [esm-webpack](4-esm-webpack) - Uses [esm](https://github.com/standard-things/esm) for Node.js and [babel](https://babeljs.io/)+[webpack](https://webpack.js.org/) to compile browser source files.
+5. [rollup](5-rollup) - Uses [babel](https://babeljs.io/)+[rollup](https://rollupjs.org/guide/en) to compile Node.js and browser source files.
+6. [webpack](6-webpack) - Uses [babel](https://babeljs.io/)+[webpack](https://webpack.js.org/) to compile Node.js and browser source files.
+7. [typescript](7-typescript) - Uses [typescript](https://www.typescriptlang.org/) to transpile Node.js and browser source files.
 
 ## Related
 
 - [esm](https://github.com/standard-things/esm) - Tomorrow's ECMAScript modules today!
+- [babel](https://babeljs.io/) - A compiler for writing next generation JavaScript.
+- [rollup](https://rollupjs.org/guide/en) - A module bundler for JavaScript.
+- [webpack](https://webpack.js.org/) - A bundler for javascript and friends.
+- [typescript](https://www.typescriptlang.org/) - TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
 
 ## License
 
