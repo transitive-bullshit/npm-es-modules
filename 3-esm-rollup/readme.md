@@ -1,4 +1,4 @@
-# npm-es-modules-2-babel
+# npm-es-modules-3-esm-rollup
 
 > Breakdown of 7 different ways to use ES modules with npm today.
 
