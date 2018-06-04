@@ -1,6 +1,6 @@
 {
   "name": "npm-es-modules-4-esm-webpack",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Breakdown of 7 different ways to use ES modules with NPM today.",
   "main": "main.js",
   "module": "module.jsm",
