@@ -1,0 +1,42 @@
+{
+  "name": "npm-es-modules-1-basic",
+  "version": "0.0.0",
+  "description": "Breakdown of different ways to use ES modules with NPM today.",
+  "main": "index.js",
+  "module": "index.js",
+  "browser": "index.js",
+  "repository": "transitive-bullshit/npm-es-modules",
+  "author": "Travis Fischer <travis@automagical.ai>",
+  "license": "MIT",
+  "scripts": {
+    "docs": "yarn run docs-node && yarn run docs-browser",
+    "docs-node": "update-markdown-jsdoc --no-markdown-toc --shallow -f index.js -s 'Node API'",
+    "docs-browser": "update-markdown-jsdoc --no-markdown-toc --shallow -f browser.js -s 'Browser API'",
+    "test": "ava -v && standard"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+    "npm",
+    "es",
+    "esm",
+    "modules",
+    "commonjs"
+  ],
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "esm": "^3.0.46",
+    "standard": "^11.0.0",
+    "update-markdown-jsdoc": "^1.0.6"
+  },
+  "dependencies": {
+    "get-pixels": "^3.3.0",
+    "ow": "^0.4.0"
+  },
+  "ava": {
+    "require": [
+      "esm"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "private": true,
+  "description": "Breakdown of 7 different ways to use ES modules with npm today.",
+  "repository": "transitive-bullshit/npm-es-modules",
+  "author": "Travis Fischer <travis@automagical.ai>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "docs": "lerna run docs",
+    "test": "lerna run test",
+    "prepare": "lerna run prepare"
+  },
+  "workspaces": [
+    "1-basic",
+    "2-babel",
+    "3-esm-rollup",
+    "4-esm-webpack",
+    "5-rollup",
+    "6-webpack",
+    "7-typescript"
+  ],
+  "devDependencies": {
+    "lerna": "^2.11.0"
+  }
+}
