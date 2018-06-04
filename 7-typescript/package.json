@@ -1,0 +1,44 @@
+{
+  "name": "npm-es-modules-7-typescript",
+  "version": "0.0.0",
+  "description": "Breakdown of 7 different ways to use ES modules with NPM today.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "browser": "dist/browser.js",
+  "repository": "transitive-bullshit/npm-es-modules",
+  "author": "Travis Fischer <travis@automagical.ai>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "yarn run clean",
+    "build": "tsc",
+    "start": "tsc -w",
+    "clean": "del dist",
+    "prepublishOnly": "yarn run build",
+    "pretest": "yarn run build",
+    "test": "ava -v"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "keywords": [
+    "npm",
+    "es",
+    "esm",
+    "typescript",
+    "babel",
+    "modules",
+    "commonjs"
+  ],
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "del-cli": "^1.1.0",
+    "typescript": "^2.8.1"
+  },
+  "dependencies": {
+    "get-pixels": "^3.3.0",
+    "ow": "^0.4.0"
+  },
+  "files": [
+    "dist"
+  ]
+}

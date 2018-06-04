@@ -4,6 +4,7 @@
 
 [![NPM](https://img.shields.io/npm/v/npm-es-modules.svg)](https://www.npmjs.com/package/npm-es-modules) [![Build Status](https://travis-ci.com/transitive-bullshit/npm-es-modules.svg?branch=master)](https://travis-ci.com/transitive-bullshit/npm-es-modules) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+
 ## Goals
 
 Every approach must satisfy the following requirements:
@@ -14,6 +15,7 @@ Every approach must satisfy the following requirements:
 - import at least one existing commonjs module from npm
 - import at least one es module source file locally
 - include at least one unit test
+
 
 ## Functionality
 
@@ -27,6 +29,7 @@ To show how you can bundle modules with slightly different semantics for Node.js
 
 Both versions return a `Promise` for an `Object` containing `width` and `height` properties.
 
+
 ## Approaches
 
 1. [naive](1-naive) - The most naive possible use of ES modules supporting our functionality. This approach is *broken* and provided as an example starting point.
@@ -37,6 +40,7 @@ Both versions return a `Promise` for an `Object` containing `width` and `height`
 6. [webpack](6-webpack) - Uses [babel](https://babeljs.io/)+[webpack](https://webpack.js.org/) to compile all Node.js and browser source files.
 7. [typescript](7-typescript) - Uses [typescript](https://www.typescriptlang.org/) to transpile all Node.js and browser source files.
 
+
 ## Related
 
 - [esm](https://github.com/standard-things/esm) - Tomorrow's ECMAScript modules today!
@@ -45,9 +49,13 @@ Both versions return a `Promise` for an `Object` containing `width` and `height`
 - [webpack](https://webpack.js.org/) - A bundler for javascript and friends.
 - [typescript](https://www.typescriptlang.org/) - TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
 
+
 ## Related Tutorials
 
-- [](http://2ality.com/2017/07/npm-packages-via-babel.html)
+- [Native ES Modules in NodeJS: Status And Future Directions](https://medium.com/@giltayar/native-es-modules-in-nodejs-status-and-future-directions-part-i-ee5ea3001f71) - By [Gil Tayar](https://medium.com/@giltayar)
+- [A Minimal Setup for Babel-based npm packages](http://2ality.com/2017/07/npm-packages-via-babel.html) - By [@rauschma](https://twitter.com/rauschma)
+- [Tomorrow’s ES Modules Today!](https://medium.com/web-on-the-edge/tomorrows-es-modules-today-c53d29ac448c) - By [@jdalton](https://twitter.com/jdalton)
+
 
 ## License
 
