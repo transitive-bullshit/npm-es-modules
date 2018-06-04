@@ -1,4 +1,4 @@
-// browser es module entrypoint compiled to ES5 and commonjs at dist/browser.js
+// browser es module entrypoint compiled to dist/browser.js
 
 import ow from 'ow'
 import loadImage from './lib/browser-load-image'

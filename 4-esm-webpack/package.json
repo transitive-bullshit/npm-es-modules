@@ -24,7 +24,7 @@
     "npm",
     "es",
     "esm",
-    "rollup",
+    "webpack",
     "babel",
     "modules",
     "commonjs"
@@ -59,12 +59,7 @@
   },
   "babel": {
     "presets": [
-      [
-        "env",
-        {
-          "modules": false
-        }
-      ]
+      "env"
     ],
     "plugins": [
       "external-helpers",
