@@ -1,26 +1,15 @@
-'use strict'
+import { join } from 'path'
 
-const path = require('path')
-
-module.exports = {
+export default {
   target: 'web',
   mode: process.env.NODE_ENV || 'development',
   devtool: 'source-map',
   entry: [
-    './browser.mjs'
+    './browser.js'
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: join(__dirname, 'dist'),
     filename: 'browser.js',
     libraryTarget: 'commonjs2'
-  },
-  module: {
-    rules: [
-      {
-        test: /.jsm$/,
-        exclude: /node_modules/,
-        use: 'babel-loader'
-      }
-    ]
   }
 }
