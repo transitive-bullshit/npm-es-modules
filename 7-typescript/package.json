@@ -33,7 +33,7 @@
     "commonjs"
   ],
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "^1.0.0-beta.5.1",
     "del-cli": "^1.1.0",
     "typescript": "^2.8.1"
   },
