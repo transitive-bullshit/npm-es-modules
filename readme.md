@@ -61,6 +61,7 @@ Both versions return a `Promise` for `{ width: number, height: number }`.
 ## Related Tutorials
 
 - [Native ES Modules in NodeJS: Status And Future Directions](https://medium.com/@giltayar/native-es-modules-in-nodejs-status-and-future-directions-part-i-ee5ea3001f71) - By [@giltayar](https://twitter.com/giltayar)
+- [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/) - By [Lin Clark](https://code-cartoons.com/)
 - [A Minimal Setup for Babel-based npm packages](http://2ality.com/2017/07/npm-packages-via-babel.html) - By [@rauschma](https://twitter.com/rauschma)
 - [Tomorrow’s ES Modules Today!](https://medium.com/web-on-the-edge/tomorrows-es-modules-today-c53d29ac448c) - By [@jdalton](https://twitter.com/jdalton)
 

@@ -1,7 +1,7 @@
 import test from 'ava'
 import path from 'path'
 
-import getImageDimensions from './main'
+import getImageDimensions from './module'
 
 const fixturesPath = path.join(__dirname, '..', 'media')
 
