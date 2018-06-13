@@ -1,6 +1,24 @@
-'use strict'
+// node es module entrypoint
 
-// node commonjs entrypoint
+import ow from 'ow'
+import loadImage from './lib/load-image'
 
-const _require = require('esm')(module) // eslint-disable-line
-module.exports = _require('./module').default
+/**
+ * Computes the dimensions of an input image.
+ *
+ * @name getImageDimensions
+ * @function
+ *
+ * @param {string} input - Input image to process (can be a local path, http url, or data url)
+ * @return {Promise}
+ */
+export default async (input) => {
+  ow(input, ow.string.nonEmpty.label('input'))
+
+  const image = await loadImage(input)
+
+  return {
+    width: image.shape[0],
+    height: image.shape[1]
+  }
+}
