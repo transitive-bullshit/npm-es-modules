@@ -49,6 +49,9 @@
     "get-pixels": "^3.3.0",
     "ow": "^0.4.0"
   },
+  "ava": {
+    "babel": false
+  },
   "babel": {
     "presets": [
       [
